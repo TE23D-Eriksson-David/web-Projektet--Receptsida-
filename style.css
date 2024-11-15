@@ -69,13 +69,13 @@ ol{
 }
 
 #Viltskav_img{
-    
     width: 425px;
     height: auto;
     margin-left: 100px;
 }
 
 #Hakad_rödlök{
+    justify-self: end;
     width: 500px;
     height: auto;
 }
