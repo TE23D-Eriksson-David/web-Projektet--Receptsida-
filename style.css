@@ -1,10 +1,20 @@
 body{
 display: grid;
 grid-template-columns: 1fr 1fr ;
-grid-template-rows: 30vh 70vh 40vh 120vh 70vh 30vh;
+grid-template-rows: 30vh 70vh 40vh 120vh 90vh 30vh;
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-background-color: black;
 color: white;
+
+background: linear-gradient(to bottom, 
+        black 0%, 
+        black 38%,
+        darkgrey 43%, 
+        lightgrey 50%, 
+        lightgrey 60%, 
+        darkgrey 67%, 
+        black 72%,
+        black 100%
+    );
 }
 
 
@@ -26,11 +36,10 @@ nav{
     grid-column: 1/3;
 display: flex;
 flex-direction: row;
+justify-content: space-around;
 }
 
 article{
-    display: flex;
-    flex-direction: column;
     height: 75%;
     width: 45%;
     margin-top: 10%;
@@ -100,16 +109,38 @@ ul{
     li{
         margin: 5px;
         margin-top: 10px;
+        font-size: 16px;
     }
 }
 
 ol{
     width: 75%;
-    padding-left: 80px; */
+    padding-left: 80px; 
     li{
-        margin-top: 20px;
+        margin: 20px;
+        font-size: 17px;
     }
 }
+
+a{
+    color: black;
+
+    #ICA{
+        width: 80%;
+    }
+    #COOP{
+        width: 80%;
+    }
+    #KöK{
+        width: 80%;
+    }
+   
+}
+
+#mail{
+    color: white;
+}
+
 
 #Viltskav_img{
     padding-top: 5%;
@@ -120,6 +151,7 @@ ol{
 }
 
 #Hakad_rödlök{
+    margin-top: 20%;
     justify-self: end;
     width: 500px;
     height: auto;
@@ -128,18 +160,10 @@ ol{
 }
 
 #Renskav{
+    margin-top: 20%;
     width: 500px;
     height: auto;
     margin-left: 5%;
     border-radius: 5%;
 }
 
-#ICA{
-    width: 80%;
-}
-#COOP{
-    width: 80%;
-}
-#KöK{
-    width: 80%;
-}
